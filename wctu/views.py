@@ -51,9 +51,7 @@ def login(request):
         return render(request, 'login.html')
 
 
-
 def apisever(request):
-    print('n1',time.time())
     url = request.GET.get('url', '')
     pt = int(request.GET.get('id', '0'))
     if pt == 1:
@@ -62,4 +60,4 @@ def apisever(request):
         data = NewSever(url).douyin()
     else:
         data = NewSever().returns()
-    return HttpResponse(json.dumps(data),'application/json; charset=UTF-8')
+    return HttpResponse(json.dumps(data), 'application/json; charset=UTF-8')
