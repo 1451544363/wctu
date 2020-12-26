@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>404</title>
+</head>
+<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+<style type="text/css">
+	body{
+		background-color: #19CAAD;
+	}
+	.cone{
+		border-radius: 25px;
+		background-color: #BEEDC7;
+		font-size: 20rem;
+		margin-top: 10rem;
+		line-height: 1;
+
+	}
+	.pec{
+		background-color: #F4606C;
+		border-radius: 30px;
+		font-size: 2rem;
+		color: #A0EEE1;
+	}
+	.footer{
+    clear: both;
+    display: block;
+    text-align: center;    
+    margin: 0px auto;
+    position: absolute;
+    bottom: 100px;
+    }
+</style>
+<body>
+	<div class="">
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col-6 cone lead" id="erro"><p class="text-center">404</p></div>
+		</div>
+		<div class="row">
+			<div class="col-3">
+				
+			</div>
+			<div class="col-6 pec mt-2"><p class="text-center"><a href="/">返回首页</a></p></div>
+		</div>
+	</div>
+<script type="text/javascript">
+	console.log("如果电脑前的你看到了找个页面，那说明你还在手动找注入点，不要放弃，加油打工人！");
+	var bodyWigth = document.body.clientWidth;
+	var ever = ((bodyWigth/4)*2)/3;
+	document.getElementById("erro").style.cssText = "font-size:"+ever+"px;";
+</script>
+</body>
+</html>
